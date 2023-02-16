@@ -8,9 +8,41 @@ PyG is characterized by formalizing the data structure for graph and implementin
 
 There are many GNN-algorithms classes implemented in `torch_geometric.nn` such as [GCNConv](https://github.com/pyg-team/pytorch_geometric/blob/master/torch_geometric/nn/conv/gcn_conv.py) and they are inherited from `torch.nn.Module`. 
 
-So it's feasible to scale codes based on PyG to Orca. 
+So it's feasible to scale codes based on PyG to Orca. Take the [PyG tutorial example](https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html#) as an example to show how to scale the code to orca:
+- init orca context
+```
+init_orca_context()
+```
+- define the graph 
+We can define the graph using `torch_geometric.Data` and create a dataloader.
+```
+import torch
+from torch_geometric.data import Data
 
+edge_index = torch.tensor([[0, 1],
+                           [1, 0],
+                           [1, 2],
+                           [2, 1]], dtype=torch.long)
+x = torch.tensor([[-1], [0], [1]], dtype=torch.float)
 
+data = Data(x=x, edge_index=edge_index.t().contiguous())
+```
+- define the Graph Neural Network
+Then we define our GNN inherited from `torch_geometric.nn`.
+```
+
+```
+- train the network using orca
+Then train the network distributedly using orca.
+```
+
+```
+- stop orca context
+```
+stop_orca_context()
+```
+
+Besides, PyG also provides the tutorial of [loading graph from csv](https://pytorch-geometric.readthedocs.io/en/latest/tutorial/load_csv.html) using [MovieLens dataset](https://grouplens.org/datasets/movielens/). So it's convinent to write a tutorial of "scaling GNN to orca based on PyG" using the dataset `ml-1m` to maintain the consistency of the dataset with `NCF tutorial`.
 
 
 ### Links
