@@ -110,7 +110,7 @@ result = model(test_data)
 stop_orca_context()
 ```
 
-Besides, PyG also provides the tutorial of [loading graph from csv](https://pytorch-geometric.readthedocs.io/en/latest/tutorial/load_csv.html) using [MovieLens dataset](https://grouplens.org/datasets/movielens/). So it's convinent to write a tutorial of "scaling GNN to orca based on PyG" using the dataset `ml-1m` to maintain the consistency of the dataset with [NCF tutorial](https://github.com/intel-analytics/BigDL/tree/main/python/orca/tutorial/NCF).
+Besides, PyG also provides the tutorial of [loading graph from csv](https://pytorch-geometric.readthedocs.io/en/latest/tutorial/load_csv.html) using [MovieLens dataset](https://grouplens.org/datasets/movielens/). So it's convenient to write a tutorial of "scaling GNN to orca based on PyG" using the dataset `ml-1m` to maintain the consistency of the dataset with [NCF tutorial](https://github.com/intel-analytics/BigDL/tree/main/python/orca/tutorial/NCF).
 
 
 ### Links
