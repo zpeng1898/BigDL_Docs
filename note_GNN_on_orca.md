@@ -59,7 +59,6 @@ def train_loader_func(config, batch_size):
 - define the Graph Neural Network
 Then we define our own GNN class `GCN` consisting of `torch_geometric.nn.GCNConv` and some non-linear layers. (See more about how to customize GNN from [here.](https://pytorch-geometric.readthedocs.io/en/latest/tutorial/create_gnn.html))
 ```
-import torch
 import torch.nn.functional as F
 from torch_geometric.nn import GCNConv
 
