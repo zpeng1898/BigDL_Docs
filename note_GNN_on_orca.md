@@ -91,6 +91,8 @@ def optimizer_creator(model, config):
 - train the network using orca
 Then train the network distributedly using orca.
 ```
+from bigdl.orca.learn.pytorch import Estimator
+
 est = Estimator.from_torch(model=model_creator,
                            optimizer=optimizer_creator,
                            loss=nn.BCEWithLogitsLoss(),
