@@ -104,6 +104,7 @@ train_stats = est.fit(train_loader_func,
 ```
 - predict the graph
 ```
+test_data = data_list[0]
 model = est.get_model()
 result = model(test_data)
 ```
