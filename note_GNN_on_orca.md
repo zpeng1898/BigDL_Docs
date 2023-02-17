@@ -14,6 +14,7 @@ So it's feasible to scale codes based on PyG to Orca. Take the [PyG tutorial exa
 init_orca_context()
 ```
 - define the graph and the dataloader
+
 We can define the graph using `torch_geometric.Data`.
 ```
 import torch
@@ -57,6 +58,7 @@ def train_loader_func(config, batch_size):
     return train_loader
 ```
 - define the Graph Neural Network
+
 Then we define our own GNN class `GCN` consisting of `torch_geometric.nn.GCNConv` and some non-linear layers. (See more about how to customize GNN from [here.](https://pytorch-geometric.readthedocs.io/en/latest/tutorial/create_gnn.html))
 ```
 import torch.nn.functional as F
