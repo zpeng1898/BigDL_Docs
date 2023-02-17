@@ -90,6 +90,7 @@ def optimizer_creator(model, config):
     return optim.Adam(model.parameters(), lr=0.01)
 ```
 - train the network using orca
+
 Then train the network distributedly using orca.
 ```
 from bigdl.orca.learn.pytorch import Estimator
