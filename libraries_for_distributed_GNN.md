@@ -61,7 +61,11 @@
 
 
 ### Other links for distributed GNN
-1. libraries
+1. github notes
+
+[awesome-gnn-systems](https://github.com/chwan1016/awesome-gnn-systems#distributed-gnn-training-systems)
+
+2. libraries
 - euler
 
 [euler](https://github.com/alibaba/euler)
@@ -78,7 +82,7 @@
 
 [quiver-feature](https://github.com/quiver-team/quiver-feature)
 
-2. papers
+3. papers
 - cluster_GCN (algorithm for training large GCN)
 
 [cluster_GCN](https://github.com/zhengjingwei/cluster_GCN)
