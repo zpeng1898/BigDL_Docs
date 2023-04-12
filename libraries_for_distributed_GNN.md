@@ -36,13 +36,13 @@
 
 [7.2 distributed APIs](https://docs.dgl.ai/en/latest/guide_cn/distributed-apis.html#guide-cn-distributed-apis)
 
+[7.4 Advanced Graph Partitioning](https://docs.dgl.ai/en/latest/guide/distributed-partition.html#guide-distributed-partition)
+
 [tutorial-Distributed Node Classification * ](https://docs.dgl.ai/en/latest/tutorials/dist/1_node_classification.html#sphx-glr-tutorials-dist-1-node-classification-py)
 
 [tutorial-Distributed Link Prediction](https://docs.dgl.ai/en/latest/tutorials/dist/2_link_prediction.html)
 
-[7.4 Advanced Graph Partitioning](https://docs.dgl.ai/en/latest/guide/distributed-partition.html#guide-distributed-partition)
-
-[dgl github](https://github.com/dmlc/dgl)
+[dgl source code github](https://github.com/dmlc/dgl)
 
 
 - graphlearn-for-pytorch 
@@ -69,10 +69,12 @@
 [Euler-2.0-Message-Passing](https://github.com/alibaba/euler/wiki/Euler-2.0-Message-Passing%E6%8E%A5%E5%8F%A3)
 
 [Euler 2.0 在图分类上的应用](https://github.com/alibaba/euler/wiki/Euler-2.0-%E5%9C%A8%E5%9B%BE%E5%88%86%E7%B1%BB%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8)
-- NeutronStarLite
+- NeutronStarLite(supports CPU-GPU heterogeneous computation on multiple workers)
 
 [NeutronStarLite](https://github.com/iDC-NEU/NeutronStarLite)
-- quiver-feature
+- quiver(based on PyG)
+
+[quiver](https://github.com/quiver-team/torch-quiver)
 
 [quiver-feature](https://github.com/quiver-team/quiver-feature)
 
@@ -80,13 +82,12 @@
 - cluster_GCN (algorithm for training large GCN)
 
 [cluster_GCN](https://github.com/zhengjingwei/cluster_GCN)
-- GSplit (split-parallelism)
+- GSplit (algorithm for distributed GNN using split-parallelism)
 
 [GSplit: Scaling Graph Neural Network Training on Large Graphs via Split-Parallelism](https://arxiv.org/abs/2303.13775)
-- graph-partitioning
+- papers of graph-partitioning
 
 [graph-partitioning paperswithcode](https://paperswithcode.com/task/graph-partitioning/codeless)
-
 
 
 
