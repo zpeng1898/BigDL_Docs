@@ -59,6 +59,8 @@
 
 [METIS - Serial Graph Partitioning and Fill-reducing Matrix Ordering](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) 
 
+- keras distributed deep learning
+[distribute keras](https://www.tensorflow.org/tutorials/distribute/keras)
 
 ### Other links for distributed GNN
 1. github notes
