@@ -1,3 +1,8 @@
+# DGL distributed training example on node classsification: 
+# https://docs.dgl.ai/en/latest/tutorials/dist/1_node_classification.html#sphx-glr-tutorials-dist-1-node-classification-py
+# https://docs.dgl.ai/en/latest/tutorials/large/L1_large_node_classification.html#sphx-glr-tutorials-large-l1-large-node-classification-py
+# https://github.com/dmlc/dgl/blob/master/python/dgl/distributed/dist_dataloader.py
+
 import os
 os.environ['DGLBACKEND'] = 'pytorch'
 import dgl
@@ -44,7 +49,7 @@ dgl.distributed.partition_graph(graph, graph_name='ogbn-arxiv',
 dgl.distributed.initialize(ip_config='ip_config.txt')
 os.environ["MASTER_ADDR"] = '127.0.0.1'
 os.environ["MASTER_PORT"] = '29500'
-#
+
 g = dgl.distributed.DistGraph('ogbn-arxiv', part_config="4part_data/ogbn-arxiv.json")
 train_nid = dgl.distributed.node_split(g.ndata['train_mask'])
 valid_nid = dgl.distributed.node_split(g.ndata['val_mask'])
@@ -130,4 +135,24 @@ for epoch in range(3):
         print('Epoch {}: Validation Accuracy {}'.format(epoch, accuracy))
 
 
-
+# Results:
+# WARNING:root:The OGB package is out of date. Your version is 1.3.5, while the latest version is 1.3.6.                  
+# Graph(num_nodes=169343, num_edges=2332486,                                                                                    
+#     ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), 
+#     'feat': Scheme(shape=(128,), dtype=torch.float32), 
+#     'labels': Scheme(shape=(), dtype=torch.int64)}                                                                                 
+#     edata_schemes={})                                                                                                 
+# tensor([ 4,  5, 28,  ..., 10,  4,  1])                                                                                  
+# Number of classes: 40                                                                                                   
+# Converting to homogeneous graph takes 0.033s, peak mem: 3.207 GB                                                        
+# Save partitions: 0.366 seconds, peak memory: 3.368 GB                                                                   
+# There are 2332486 edges in the graph and 0 edge cuts for 1 partitions.                                                  
+# Start to load partition from 4part_data/part0/graph.dgl which is 69848781 bytes. It may take non-trivial time for large partition.                                                                                                              
+# Finished loading partition.                                                                                             
+# Start to load node data from 4part_data/part0/node_feat.dgl which is 89921568 bytes.                                    
+# Finished loading node data.                                                                                             
+# Start to load edge data from 4part_data/part0/edge_feat.dgl which is 24 bytes.                                          
+# Finished loading edge data.                                                                                             
+# Epoch 0: Validation Accuracy 0.6043826974059532                                                                         
+# Epoch 1: Validation Accuracy 0.6410282224235713                                                                         
+# Epoch 2: Validation Accuracy 0.6562636330078191 
