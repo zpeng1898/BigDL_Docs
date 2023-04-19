@@ -1,4 +1,10 @@
+- DGL Node Classification Distributed Training
+[Docs](https://docs.dgl.ai/en/latest/tutorials/dist/1_node_classification.html#set-up-distributed-training-environment)
+
 - Environment Preparation
+Prepare 2 nodes `172.16.0.107` and `172.16.0.136`.
+
+conda environment:
 ```
 conda create -n py376 python=3.7
 pip install torch torchvision torchmetrics==0.10.0 tqdm 
