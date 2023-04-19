@@ -17,7 +17,7 @@ pip install -U ogb
 
 - python scripts
 ```
-python partition_data.py
+python3 partition_data.py
 ```
 ```
 python3 launch.py               \
