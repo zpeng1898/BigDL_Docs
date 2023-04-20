@@ -34,7 +34,7 @@ python3 launch.py               \
 
 - Results
 
-train 1 epoch getting `Epoch 0: Validation Accuracy 0.16456375838926174`.
+train 1 epoch getting `Epoch 0: Validation Accuracy 0.44414607948442536`.
 ```
 (base) [root@Almaren-Node-107 1]# python3 launch.py                 --workspace /home/kai/pzy/0419/1            --num_trainers 4                    --num_samplers 1                      --num_servers 1                       --part_config 4part_data/ogbn-arxiv.json       --ip_config ip_config.txt             --ssh_port 22                      "/home/kai/anaconda3/envs/py376/bin/python3 dgl1.py"    --extra_envs MASTER_ADDR=172.16.0.107 MASTER_PORT=1234
 The number of OMP threads per trainer is set to 11
