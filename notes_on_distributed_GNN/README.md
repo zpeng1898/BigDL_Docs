@@ -100,7 +100,7 @@
 
 4. previous notes and experiments on combining distributed GNN with orca
 
-### 4. Experiments
+### 4. Experiments on combining distributed GNN libraries with orca
 
 - PyG
 
