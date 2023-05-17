@@ -1,4 +1,4 @@
-### Libraries for basic GNN
+### 1. Libraries for basic GNN
 - PyG(PyTorch Geometric)
 
 [PyG.org](https://www.pyg.org/)
@@ -20,7 +20,7 @@
 
 [StellarGraph](https://stellargraph.readthedocs.io/en/stable/README.html)
 
-### Libraries for distributed GNN using data parallelism
+### 2. Libraries for distributed GNN using data parallelism
 - graphx & graphframes *
 
 [graphx](https://spark.apache.org/graphx/)
@@ -65,7 +65,7 @@
 - keras distributed deep learning
 [distribute keras](https://www.tensorflow.org/tutorials/distribute/keras)
 
-### Other links for distributed GNN
+### 3. Other links for distributed GNN
 1. github notes
 
 [awesome-gnn-systems](https://github.com/chwan1016/awesome-gnn-systems#distributed-gnn-training-systems)
@@ -100,6 +100,25 @@
 
 4. previous notes and experiments on combining distributed GNN with orca
 
+### 4. Experiments
+
+- PyG
+
+Combining PyG with Orca. See directory `./PyG` for more notes and codes.
+
+PyG only supports PyTorch.
+
+- DGL
+
+Combining PyG with Orca. See directory `./DGL` for more notes and codes.
+
+DGL supports training GNN locally on PyTorch and TensorFlow, but supports distributed training only on PyTorch.
+
+- TF-GNN
+
+Combining TF-GNN with Orca. See directory `./TF-GNN` for more notes and codes.
+
+TF-GNN supports GNN distributed training on TensorFlow.
 
 
 
