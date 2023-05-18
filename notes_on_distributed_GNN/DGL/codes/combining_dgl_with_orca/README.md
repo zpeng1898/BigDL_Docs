@@ -1,5 +1,5 @@
 ### Node Classification Task - distributed training on DGL
-`dgl_train_node_classification.py` trains GNN on 1 node without Orca. The code is adapted from [here](https://docs.dgl.ai/en/latest/tutorials/dist/1_node_classification.html#sphx-glr-tutorials-dist-1-node-classification-py)
+`dgl_train_node_classification.py` trains GNN on 1 node without Orca. The code is adapted from [here](https://docs.dgl.ai/en/latest/tutorials/dist/1_node_classification.html#sphx-glr-tutorials-dist-1-node-classification-py).
  
 - Run command `python partition_data.py` to generate a directory `1part_data` containing one part graph.
 - Run training file locally `python dgl_train_node_classification.py`.
