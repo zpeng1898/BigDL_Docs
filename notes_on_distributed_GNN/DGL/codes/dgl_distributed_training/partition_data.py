@@ -32,6 +32,6 @@ print(len(graph.ndata['train_mask']))
 # graph partitioning
 dgl.distributed.partition_graph(graph, graph_name='ogbn-arxiv',
                                              num_parts=2,
-                                             out_path='4part_data',
+                                             out_path='2part_data',
                                              balance_ntypes=graph.ndata['train_mask'],
                                              balance_edges=True)
