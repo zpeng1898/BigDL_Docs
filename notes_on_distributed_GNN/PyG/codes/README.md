@@ -1,4 +1,4 @@
-### Combing PyG with Orca
+### Combine PyG with Orca
 
 - prepare conda environment
 Follow [here](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html#quick-start) and install CPU version of `PyG`.
