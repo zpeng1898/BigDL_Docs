@@ -3,9 +3,10 @@
 [Docs](https://docs.dgl.ai/en/latest/tutorials/dist/1_node_classification.html#set-up-distributed-training-environment)
 
 - Environment Preparation
-Prepare 2 nodes `172.16.0.107` and `172.16.0.136`.
 
-conda environment:
+First prepare 2 nodes `172.16.0.107` and `172.16.0.136`.
+
+Then prepare conda environment on the 2 nodes seperately:
 ```
 conda create -n py376 python=3.7
 pip install torch torchvision torchmetrics==0.10.0 tqdm 
@@ -16,7 +17,9 @@ python -c "import ogb; print(ogb.__version__)"
 pip install -U ogb
 ```
 
-- python scripts
+Then upload the prepocessed dataset `4part_data`, ip configuration `ip_config.txt` and launch script `launch.py` to master node `172.16.0.107`. And upload the main training file `dgl1.py` to both 2 nodes' workspace `/home/kai/pzy/0419/1`.
+
+- Execute python scripts on master node `172.16.0.107`
 ```
 python3 partition_data.py
 ```
