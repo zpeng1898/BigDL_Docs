@@ -131,7 +131,7 @@ Combining [TF-GNN](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/do
 TF-GNN supports GNN distributed training based on TensorFlow.
 
 TODO: 
-1. Run TF-GNN distributed training example without Orca. The notebook tutorial [node classification](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/ogbn_mag_e2e.ipynb) on `colab` can run successfully. However, it failed when I run the code on my own cluster. The reason is the code was built on the latest version of `TF-GNN-0.5.0` which is dependent on [bazel](https://docs.bazel.build/versions/2.0.0/updating-bazel.html), but I failed to build `bazel` when following [the instruction](https://github.com/tensorflow/gnn/tree/main). 
+1. Run TF-GNN distributed training example without Orca. The notebook tutorial [node classification](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/ogbn_mag_e2e.ipynb) on `colab` can run successfully. However, it failed when I run the code on my own cluster. The reason is the code was built on the latest version of `TF-GNN-0.5.0` which is dependent on [bazel](https://docs.bazel.build/versions/2.0.0/updating-bazel.html), but I failed to build `bazel` when following [the instruction](https://github.com/tensorflow/gnn/tree/main). See `./TF-GNN/codes/TF-GNN_distributed_training` for more. 
 2. Combine TF-GNN with Orca.
 
 
