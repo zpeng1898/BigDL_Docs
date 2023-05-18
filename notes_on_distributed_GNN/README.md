@@ -33,7 +33,7 @@
 
 - dgl *
 
-[dgl docs](https://docs.dgl.ai/)
+[dgl docs * ](https://docs.dgl.ai/)
 
 [dgl distributed docs * ](https://docs.dgl.ai/en/latest/guide/distributed.html)
 
@@ -47,6 +47,13 @@
 
 [dgl source code github](https://github.com/dmlc/dgl)
 
+- TF-GNN
+
+[github * ](https://github.com/tensorflow/gnn/tree/main)
+
+[docs * ](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/overview.md)
+
+[node classification tutorial * ](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/ogbn_mag_e2e.ipynb)
 
 - graphlearn-for-pytorch 
 
@@ -104,13 +111,13 @@
 
 - PyG
 
-Combining PyG with Orca. See directory `./PyG` for more notes and codes.
+Combining [PyG](https://www.pyg.org/) with Orca. See directory `./PyG` for more notes and codes.
 
 PyG only supports PyTorch.
 
 - DGL
 
-Combining PyG with Orca. See directory `./DGL` for more notes and codes.
+Combining [DGL](https://docs.dgl.ai/) with Orca. See directory `./DGL` for more notes and codes.
 
 DGL supports training GNN locally on PyTorch and TensorFlow, but supports distributed training only on PyTorch.
 
@@ -119,9 +126,9 @@ DGL supports training GNN locally on PyTorch and TensorFlow, but supports distri
 
 - TF-GNN
 
-Combining TF-GNN with Orca. See directory `./TF-GNN` for more notes and codes.
+Combining [TF-GNN](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/overview.md) with Orca. See directory `./TF-GNN` for more notes and codes.
 
-[TF-GNN]() supports GNN distributed training based on TensorFlow.
+TF-GNN supports GNN distributed training based on TensorFlow.
 
 TODO: 
 1. Run TF-GNN distributed training example without Orca. The notebook tutorial [node classification](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/ogbn_mag_e2e.ipynb) on `colab` can run successfully. However, it failed when I run the code on my own cluster. The reason is the code was built on the latest version of `TF-GNN-0.5.0` which is dependent on [bazel](https://docs.bazel.build/versions/2.0.0/updating-bazel.html), but I failed to build `bazel` when following [the instruction](https://github.com/tensorflow/gnn/tree/main). 
