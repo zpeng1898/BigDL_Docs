@@ -114,12 +114,18 @@ Combining PyG with Orca. See directory `./DGL` for more notes and codes.
 
 DGL supports training GNN locally on PyTorch and TensorFlow, but supports distributed training only on PyTorch.
 
+`./DGL/codes/dgl_distributed_training` trains GNN on 2 nodes distributedly using `DGL` and `tf.distributed.strategy` without `Orca`. 
+`./DGL/codes/combing_dgl_with_orca` trains GNN on 1 node, using `DGL` to get a whole graph with only one part, and training it on `Orca` with `local` mode.
+
 - TF-GNN
 
 Combining TF-GNN with Orca. See directory `./TF-GNN` for more notes and codes.
 
-TF-GNN supports GNN distributed training based on TensorFlow.
+[TF-GNN]() supports GNN distributed training based on TensorFlow.
 
+TODO: 
+1. Run TF-GNN distributed training example without Orca. The notebook tutorial [node classification](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/ogbn_mag_e2e.ipynb) on `colab` can run successfully. However, it failed when I run the code on my own cluster. The reason is the code was built on the latest version of `TF-GNN-0.5.0` which is dependent on [bazel](https://docs.bazel.build/versions/2.0.0/updating-bazel.html), but I failed to build `bazel` when following [the instruction](https://github.com/tensorflow/gnn/tree/main). 
+2. Combine TF-GNN with Orca.
 
 
 
