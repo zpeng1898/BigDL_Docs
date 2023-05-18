@@ -17,11 +17,11 @@ python -c "import ogb; print(ogb.__version__)"
 pip install -U ogb
 ```
 
-Then upload the prepocessed dataset `4part_data`, ip configuration `ip_config.txt` and launch script `launch.py` to master node `172.16.0.107`. And upload the main training file `dgl1.py` to both 2 nodes' workspace `/home/kai/pzy/0419/1`.
+Then upload the ip configuration `ip_config.txt` and launch script `launch.py` to master node `172.16.0.107`. And upload the main training file `dgl1.py` to both 2 nodes' workspace `/home/kai/pzy/0419/1`.
 
 - Execute python scripts on master node `172.16.0.107`
 ```
-python3 partition_data.py
+python3 partition_data.py  # automatically download the dataset 'ogbn-arxiv' and preprocess it to generate a directory `2part_data` containing the partitioned graph.
 ```
 ```
 python3 launch.py               \
@@ -29,7 +29,7 @@ python3 launch.py               \
   --num_trainers 4                  \
   --num_samplers 1                    \
   --num_servers 1                     \
-  --part_config 4part_data/ogbn-arxiv.json     \
+  --part_config 2part_data/ogbn-arxiv.json     \
   --ip_config ip_config.txt           \
   --ssh_port 22                    \
   "/home/kai/anaconda3/envs/py376/bin/python3 dgl1.py"  \
