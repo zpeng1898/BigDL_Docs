@@ -118,7 +118,7 @@ DGL supports training GNN locally on PyTorch and TensorFlow, but supports distri
 
 Combining TF-GNN with Orca. See directory `./TF-GNN` for more notes and codes.
 
-TF-GNN supports GNN distributed training on TensorFlow.
+TF-GNN supports GNN distributed training based on TensorFlow.
 
 
 
