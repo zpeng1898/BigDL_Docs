@@ -22,7 +22,7 @@ pip install tensorflow==2.9.1 tqdm
 
 Following [here](https://docs.bazel.build/versions/2.2.0/install-redhat.html).
 
- -Install `gnn-0.5.0`:
+ - Install `gnn-0.5.0`:
 ```
 su kai
 conda activate py38
