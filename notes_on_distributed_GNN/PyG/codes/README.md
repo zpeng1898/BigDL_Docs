@@ -1,6 +1,7 @@
 ### Combine PyG with Orca
 
 - prepare conda environment
+
 Follow [here](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html#quick-start) and install CPU version of `PyG`.
 ![image](https://user-images.githubusercontent.com/42887453/225354550-25014f5e-7b37-4bb0-b5e4-f60228813f34.png)
 
@@ -13,6 +14,7 @@ pip install torch==1.13.1 torchvision torchmetrics==0.10.0 tqdm pandas pyarrow
 ```
 
 - train GNN on Orca:
+
 python command:
 ```
 python GNN_train.py
